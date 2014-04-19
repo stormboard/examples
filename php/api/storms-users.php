@@ -9,6 +9,6 @@ $id = $_GET["id"];
 
 head("GET: Storms/Users");
 
-  get("storms/users/".$id);
+  get("storms/{$id}/users");
 
 foot();

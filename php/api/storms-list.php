@@ -3,6 +3,6 @@ require "bootstrap.php";
 
 head("GET: Storms/List");
 
-  get("storms/list");
+  get("storms");
 
 foot();

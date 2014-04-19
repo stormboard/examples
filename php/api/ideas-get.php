@@ -9,6 +9,6 @@ head("GET: Ideas");
 
 $id = $_GET["id"];
 
-get("ideas/".$id, $data);
+get("ideas/".$id);
 
 foot();
