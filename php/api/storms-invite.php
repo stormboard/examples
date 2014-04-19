@@ -10,8 +10,7 @@ head("POST: Storms/Invite");
 $id = $_GET["id"];
 
 $invite = [];
-#$invite["participants"] = ["ronald@mcdonalds.com", "yoda@jedicouncil.com"];
-$invite["participants"] = ["mdbollman+api1@gmail.com", "mdbollman+api2@gmail.com", "mdbollman+api3.gmail.com"];
+$invite["participants"] = ["ronald@mcdonalds.com", "yoda@jedicouncil.com"];
 
   post("storms/{$id}/invite", $invite);
 
