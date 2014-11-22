@@ -1,7 +1,7 @@
 <?php
 require "bootstrap.php";
 
-head("POST: Users/Auth");
+head("GET: Users/Auth");
 
 get("users/auth");
 
