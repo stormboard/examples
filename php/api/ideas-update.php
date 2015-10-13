@@ -11,14 +11,16 @@ if(!isset($_GET["id"])){
  * 6 = Sketch
  */
 $type = isset($_GET["type"]) ? $_GET["type"] : 1;
+$colors = ['yellow', 'pink', 'green', 'blue', 'purple', 'grey'];
 
 head("PUT: Ideas");
 
   $id = $_GET["id"];
 
   $data = array();
-  #$data["x"] = rand(100, 1000);
-  #$data["y"] = rand(100, 1000);
+  $data["x"] = rand(100, 1000);
+  $data["y"] = rand(100, 1000);
+  $data["color"] = $colors[rand(0, 5)];
   $data["lock"] = 0;
 
   switch($type){
