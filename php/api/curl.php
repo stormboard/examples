@@ -5,6 +5,9 @@ function get($path){
   $header = array();
   $header[] = 'X-API-Key:'.$config["testkey"];
 
+  //Use this for basic auth instead of API Key auth
+  //$header[] = 'Authentication: Basic '.base64_encode($config['username'].':'.$config['password']);
+
   $url = $config["apiurl"].$path;
   $ch = curl_init($url);
   curl_setopt($ch, CURLOPT_HTTPHEADER,$header);
